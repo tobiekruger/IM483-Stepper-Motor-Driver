@@ -25,12 +25,14 @@ def forward(delay, steps):
   for i in range(0, steps):
     GPIO.output(step_pin, 1)
     time.sleep(delay)
+    GPIO.output(step_pin, 0)
  
 def backwards(delay, steps):  
   GPIO.output(direction_pin, 0)
   for i in range(0, steps):
     GPIO.output(step_pin, 1)
     time.sleep(delay)
+    GPIO.output(step_pin, 0)
  
  
 while True:
