@@ -38,6 +38,10 @@ def backwards(delay, steps):
 while True:
   delay = raw_input("Delay between steps (milliseconds)?")
   steps = raw_input("How many steps forward? ")
+  
+  start_time = time.time()
   forward(int(delay) / 1000.0, int(steps))
+  elapsed_time = time.time() - start_time
+  print 'Total time: %s' % elapsed_time
   steps = raw_input("How many steps backwards? ")
   backwards(int(delay) / 1000.0, int(steps))
