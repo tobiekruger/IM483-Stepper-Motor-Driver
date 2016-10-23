@@ -45,6 +45,7 @@ while taken < steps:
   forward(int(delay) / 10000.0, 2)
   elapsed_time = time.time() - start_time
   while elapsed_time < 1.5:
+    elapsed_time = time.time() - start_time
     print 'getting to 1.5 seconds: %s' % elapsed_time
   
   
