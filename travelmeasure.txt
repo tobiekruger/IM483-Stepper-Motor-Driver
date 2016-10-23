@@ -1,0 +1,5 @@
+TRAVEL MEASURE:
+
+time : 1.644 sec
+distance : 175 mm
+steps : 4800
