@@ -37,15 +37,19 @@ def backwards(delay, steps):
  
 
 delay = 15
-steps = 4800
+steps = 6400
 taken = 0
+
+button_time = time.time()
 
 while taken < steps:
   start_time = time.time()
-  forward(int(delay) / 10000.0, 2)
+  forward(int(delay) / 10000.0, 1)
+  taken = taken + 1
   elapsed_time = time.time() - start_time
-  while elapsed_time < 1.5:
-    elapsed_time = time.time() - start_time
-    print 'getting to 1.5 seconds: %s' % elapsed_time
+  print 'total time: %s' % time.time() - button_time
+  print 'total steps: %s' % taken
+  while elapsed_time < 1:
+    elapsed_time = time.time() - start_time    
   
   
