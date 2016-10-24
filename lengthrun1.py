@@ -47,8 +47,8 @@ while taken < steps:
   forward(int(delay) / 10000.0, 1)
   taken = taken + 1
   elapsed_time = time.time() - start_time
-  print 'total time: %s' % time.time() - button_time
-  print 'total steps: %s' % taken
+  print 'total time: %d' % time.time() - button_time
+  print 'total steps: %d' % taken
   while elapsed_time < 1:
     elapsed_time = time.time() - start_time    
   
