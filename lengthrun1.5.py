@@ -39,7 +39,7 @@ def backwards(delay, steps):
 delay = 20
 steps = 6400
 taken = 0
-lapse = 1
+lapse = 1.5
 
 button_time = time.time()
 
